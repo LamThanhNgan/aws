@@ -1,0 +1,5 @@
+*.csv
+**/.terraform
+
+**/.terraform.lock.hcl
+**/terraform.tfstate
