@@ -1,5 +1,6 @@
 *.csv
 **/.terraform
-
+**/node_modules
 **/.terraform.lock.hcl
 **/terraform.tfstate
+**/terraform.tfstate.backup
