@@ -8,8 +8,6 @@ RUN npm install -g npm && npm i
 
 # Use a clean, minimal runtime image
 FROM node:20-alpine
-ENV NODE_ENV=development
-ENV PORT=80
 WORKDIR /app
 
 # Copy dependencies from the build stage
@@ -18,5 +16,5 @@ COPY --from=build /app/node_modules /app/node_modules
 # Copy remaining source files
 COPY . .
 
-EXPOSE 80
+EXPOSE 8000
 CMD ["npm", "start"]
