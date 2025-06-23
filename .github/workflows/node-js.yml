@@ -1,4 +1,4 @@
-name: Basic CI Pipeline
+name: CI Pipeline
 
 on:
   push:
@@ -9,5 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run CI command
-        run: echo "Basic GitHub Action CI"
+      - run: echo "Running CI"
